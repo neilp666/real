@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-         validates_presence_of :name  #validates the presence of the name field
+         #validates_presence_of :name  #validates the presence of the name field
 end
