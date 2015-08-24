@@ -1,6 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% if user_signed_in? %>
+#show them something
+
+<% else %>
+
+<h1>Welcome to One Month Rails</h1>
 
 <p>
   <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
         </p>
+
+<% end %>
